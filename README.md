@@ -9,15 +9,6 @@ The TURN client and server files are in the `async_std_stun_turn/src/turn` folde
 The client and server examples are present in the `test.rs` and `main.rs` files respectively.
 
 ## Build instructions
-
-### Requirements
-
-* rustc 1.51.0
-* Cargo 1.51.0
-* Required crates listed in `async_std_stun_turn/src/cargo.toml`
-* Tested on Manjaro Linux and Amazon Linux
-* At least 750mb of storage is required for all of the dependencies that cargo will download.
-
 ### Build steps
 
 * `cd async_std_stun_turn/src`
@@ -35,6 +26,3 @@ individual one, with a command like `cargo test turn_allocate -- --test-threads 
 
 For tests that attempt an allocation, data can be entered in the command line running the client to be relayed.
 Entering no data will cause the client to close the allocation.
-
-Running `bash server.sh`, in the directory above this file, will attempt to run the
-AWS server. However, the ssh won't be authenticated so it will fail.
